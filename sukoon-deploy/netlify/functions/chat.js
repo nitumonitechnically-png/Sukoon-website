@@ -9,7 +9,7 @@
 //   Value: (your key from https://console.anthropic.com)
 // Then redeploy the site.
 
-exports.handler = async function (event) {
+export const handler = async (event) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
